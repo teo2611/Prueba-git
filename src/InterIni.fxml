@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControlInicio">
+   <children>
+      <ImageView id="img1" fx:id="img1" fitHeight="412.0" fitWidth="590.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/portada.gif" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label id="lbl1" fx:id="lbl1" layoutX="231.0" layoutY="34.0" prefHeight="46.0" prefWidth="137.0" text="LOGIN">
+         <font>
+            <Font name="Tahoma Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.8483412322274881" endY="0.05213270142180093" startX="0.8578199052132701" startY="0.5781990521327014">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.9732824563980103" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <AnchorPane id="Panelinea" fx:id="Panelinea" layoutX="242.0" layoutY="77.0" prefHeight="6.0" prefWidth="97.0" style="-fx-background-color: #ffa000;" />
+      <TextField id="txtuser" fx:id="txtuser" layoutX="173.0" layoutY="142.0" onAction="#name" prefHeight="25.0" prefWidth="254.0" promptText="Username" style="-fx-background-color: #424242; -fx-background-radius: 90;">
+         <font>
+            <Font name="Tw Cen MT" size="16.0" />
+         </font>
+      </TextField>
+      <PasswordField id="pasword" fx:id="pasword" layoutX="173.0" layoutY="214.0" onAction="#passwo" prefHeight="25.0" prefWidth="254.0" promptText="Password" style="-fx-background-color: #424242; -fx-background-radius: 90;">
+         <font>
+            <Font name="Tw Cen MT" size="16.0" />
+         </font>
+      </PasswordField>
+      <Button id="btnlogin" fx:id="btnlogin" layoutX="236.0" layoutY="299.0" mnemonicParsing="false" onAction="#entrar" prefHeight="27.0" prefWidth="109.0" style="-fx-background-color: #ffa000; -fx-background-radius: 90;" text="Login">
+         <font>
+            <Font name="Tw Cen MT" size="22.0" />
+         </font>
+      </Button>
+      <ImageView id="imguser" fx:id="imguser" fitHeight="64.0" fitWidth="58.0" layoutX="106.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/usuario%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView id="imgpasw" fx:id="imgpasw" fitHeight="46.0" fitWidth="51.0" layoutX="112.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/cerrar-con-llave.png" />
+         </image>
+      </ImageView>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</Pane>
